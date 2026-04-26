@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Relatório CSS - Portfólio FolioOne</title>
+  <meta name="description" content="Relatório sobre HTML, CSS, seletores e adaptação do template FolioOne.">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page portfolio-home">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <span class="sitename">Leonardo Dev</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Portfólio</a></li>
+          <li><a href="#html-css" class="active">HTML e CSS</a></li>
+          <li><a href="#formas">Formas de CSS</a></li>
+          <li><a href="#template">Template</a></li>
+          <li><a href="#adaptacao">Adaptação</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://github.com/" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Relatório de HTML, CSS e Bootstrap</h2>
+        <p>Atividade desenvolvida com base no template FolioOne, da BootstrapMade, adaptado para um portfólio profissional em HTML, CSS e Bootstrap.</p>
+      </div>
+
+      <div class="container">
+        <div class="portfolio-panel">
+          <h3>Referências consultadas</h3>
+          <p>Template escolhido: <a href="https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/">FolioOne - Clean Portfolio Bootstrap Template</a>. A página de categorias da BootstrapMade lista o FolioOne como template moderno e responsivo para portfólios. Para a explicação técnica, foi usada a documentação da MDN sobre <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Getting_started">introdução ao CSS</a> e <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors/Selectors_and_combinators">seletores CSS</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="html-css" class="section light-background">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <article class="portfolio-panel h-100">
+              <h3>1. Diferença entre HTML e CSS</h3>
+              <p>HTML significa HyperText Markup Language. Ele é responsável pela estrutura e pelo conteúdo de uma página web. Com HTML, definimos títulos, parágrafos, links, imagens, listas, seções, formulários e a organização semântica da informação.</p>
+              <p>CSS significa Cascading Style Sheets. Ele é responsável pela apresentação visual da página. Com CSS, controlamos cores, fontes, tamanhos, espaçamentos, posicionamento, bordas, efeitos de interação e adaptação da página para telas diferentes.</p>
+              <p>As duas tecnologias se complementam: o HTML cria os elementos e dá sentido ao conteúdo, enquanto o CSS seleciona esses elementos e define como eles serão exibidos. Em um portfólio, por exemplo, o HTML marca a seção de projetos e o CSS transforma essa seção em cartões organizados, com cores, imagens, espaçamentos e botões estilizados.</p>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="portfolio-panel h-100">
+              <h3>2. Exemplos de propriedades CSS</h3>
+              <p><strong>color:</strong> define a cor do texto. Afeta diretamente a leitura e o contraste do conteúdo.</p>
+              <p><strong>font-size:</strong> define o tamanho da fonte. Ajuda a criar hierarquia visual entre títulos, subtítulos e parágrafos.</p>
+              <p><strong>background-color:</strong> define a cor de fundo de um elemento. Ajuda a separar áreas da página e destacar blocos importantes.</p>
+              <p><strong>margin:</strong> cria espaço externo ao redor do elemento. Afasta o elemento dos outros componentes da página.</p>
+              <p><strong>padding:</strong> cria espaço interno entre a borda do elemento e o conteúdo. Deixa botões e cartões mais confortáveis visualmente.</p>
+              <pre><code>.card-projeto {
+  color: #ede9fe;
+  font-size: 18px;
+  background-color: #24143d;
+  margin: 24px 0;
+  padding: 32px;
+}</code></pre>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formas" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>3. Formas de aplicar CSS</h2>
+        <p>Existem três formas principais: CSS inline, CSS interno e CSS externo.</p>
+      </div>
+
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <article class="portfolio-panel h-100">
+              <h3>CSS Inline</h3>
+              <p>Funciona colocando as declarações CSS diretamente no atributo <code>style</code> de uma tag HTML. Afeta apenas aquele elemento específico.</p>
+              <pre><code>&lt;p style="color: purple; font-size: 18px;"&gt;
+  Texto com CSS inline.
+&lt;/p&gt;</code></pre>
+              <p><strong>Vantagens:</strong> é rápido para testes e alterações pontuais.</p>
+              <p><strong>Desvantagens:</strong> mistura conteúdo e estilo, dificulta manutenção e repetição em várias páginas.</p>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <article class="portfolio-panel h-100">
+              <h3>CSS Interno</h3>
+              <p>Funciona dentro da tag <code>&lt;style&gt;</code>, geralmente no <code>&lt;head&gt;</code> do documento HTML. Afeta os elementos da própria página.</p>
+              <pre><code>&lt;head&gt;
+  &lt;style&gt;
+    h1 {
+      color: #a855f7;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+              <p><strong>Vantagens:</strong> centraliza estilos de uma página sem criar arquivo extra.</p>
+              <p><strong>Desvantagens:</strong> não é ideal para sites com várias páginas, pois seria necessário repetir o CSS em cada arquivo.</p>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <article class="portfolio-panel h-100">
+              <h3>CSS Externo</h3>
+              <p>Funciona em um arquivo separado com extensão <code>.css</code>, conectado ao HTML pela tag <code>&lt;link&gt;</code>.</p>
+              <pre><code>&lt;head&gt;
+  &lt;link href="assets/css/main.css" rel="stylesheet"&gt;
+&lt;/head&gt;</code></pre>
+              <p><strong>Vantagens:</strong> facilita manutenção, reaproveita estilos em várias páginas e organiza melhor o projeto.</p>
+              <p><strong>Desvantagens:</strong> depende do carregamento correto do arquivo externo e exige atenção ao caminho do arquivo.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="template" class="section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>4. Template web e seletores</h2>
+        <p>O template escolhido foi o FolioOne, disponível na categoria de portfólios da BootstrapMade.</p>
+      </div>
+
+      <div class="container">
+        <div class="portfolio-panel mb-4">
+          <h3>Tipo de CSS aplicado no template</h3>
+          <p>O FolioOne usa principalmente <strong>CSS externo</strong>. No arquivo <code>index.html</code>, o Bootstrap, os ícones, bibliotecas visuais e o arquivo principal do template são importados com <code>&lt;link&gt;</code>. Exemplo:</p>
+          <pre><code>&lt;link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"&gt;
+&lt;link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"&gt;
+&lt;link href="assets/css/main.css" rel="stylesheet"&gt;</code></pre>
+          <p>Também há uso de atributos HTML como <code>data-aos</code> e classes Bootstrap, mas a estilização visual do template fica nos arquivos CSS externos. Não foi necessário usar CSS inline na adaptação principal.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <article class="portfolio-panel h-100">
+              <h3>Seletores simples</h3>
+              <p>Selecionam elementos por nome, id, classe, grupo ou universal.</p>
+              <pre><code>body { ... }                  /* elemento */
+#preloader { ... }            /* id */
+.header { ... }               /* classe */
+h1, h2, h3, h4, h5, h6 { ... }/* grupo */
+.portfolio-home * { ... }     /* universal */</code></pre>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="portfolio-panel h-100">
+              <h3>Pseudo-classes</h3>
+              <p>Selecionam elementos em um estado específico, como passar o mouse, foco ou último item.</p>
+              <pre><code>a:hover { ... }
+.navmenu&gt;ul&gt;li:last-child { ... }
+.contact .contact-form .form-control:focus { ... }</code></pre>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="portfolio-panel h-100">
+              <h3>Combinadores</h3>
+              <p>Selecionam elementos com base em relação entre eles, como descendência, filho direto ou irmão adjacente.</p>
+              <pre><code>.header .logo h1 { ... }      /* descendente */
+.navmenu&gt;ul&gt;li { ... }       /* filho direto */
+.page-title nav ol li+li { ... } /* irmão adjacente */</code></pre>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="portfolio-panel h-100">
+              <h3>Pseudo-elementos</h3>
+              <p>Selecionam e estilizam uma parte de um elemento ou criam conteúdo visual auxiliar.</p>
+              <pre><code>.hero .hero-content h1 .highlight::after { ... }
+#preloader:before,
+#preloader:after { ... }
+.page-title nav ol li+li::before { ... }</code></pre>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="portfolio-panel h-100">
+              <h3>Seletores de atributos</h3>
+              <p>Selecionam elementos por atributo ou valor de atributo. O template usa atributos para animação, e a adaptação adiciona um seletor para links de email.</p>
+              <pre><code>[data-aos-delay] { ... }
+.portfolio-home a[href^="mailto:"] { ... }</code></pre>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="adaptacao" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>5. Adaptação do portfólio</h2>
+        <p>A página principal <code>index.html</code> foi adaptada para um portfólio profissional completo.</p>
+      </div>
+
+      <div class="container">
+        <div class="portfolio-panel">
+          <h3>Conteúdo implementado</h3>
+          <p>Foram criadas as seções <strong>Sobre mim</strong>, <strong>Habilidades</strong>, <strong>Projetos</strong> e <strong>Contato</strong>. A seção de projetos contém dois exemplos reais: Magnolui, uma biblioteca de componentes React, e Text Editor, um editor de texto em JavaScript puro. A seção de contato inclui email, site pessoal, LinkedIn, GitHub e botão de envio de email.</p>
+
+          <h3>Personalização visual com CSS</h3>
+          <p>As principais alterações foram feitas no final de <code>assets/css/main.css</code>, na seção <code>Portfolio Customization</code>. Foram alteradas as cores principais com variáveis CSS, a tipografia foi trocada para Inter e Poppins, os botões foram personalizados com bordas menores, novo peso de fonte e efeitos de hover, e os links de email receberam destaque por seletor de atributo.</p>
+          <pre><code>.portfolio-home {
+  --default-font: "Inter", system-ui, sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --background-color: #160f24;
+  --accent-color: #a855f7;
+}
+
+.portfolio-home .hero .hero-actions .btn.btn-primary {
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Leonardo Dev</strong> <span>Todos os direitos reservados<br></span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | Relatório de atividade HTML, CSS e Bootstrap
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -2853,3 +2853,204 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# Portfolio Customization
+--------------------------------------------------------------*/
+.portfolio-home {
+  --default-font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+  --background-color: #160f24;
+  --default-color: #ede9fe;
+  --heading-color: #faf5ff;
+  --accent-color: #a855f7;
+  --surface-color: #24143d;
+  --contrast-color: #ffffff;
+  --nav-color: #f3e8ff;
+  --nav-hover-color: #c084fc;
+  --nav-mobile-background-color: #1e1233;
+  --nav-dropdown-background-color: #1e1233;
+  --nav-dropdown-color: #ede9fe;
+  --nav-dropdown-hover-color: #c084fc;
+}
+
+.portfolio-home * {
+  letter-spacing: 0;
+}
+
+.portfolio-home .light-background {
+  --background-color: #1f1433;
+  --surface-color: #2f1b4c;
+}
+
+.portfolio-home .logo .sitename {
+  color: var(--heading-color);
+  display: inline-block;
+  font-family: var(--heading-font);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.portfolio-home .portfolio-kicker,
+.portfolio-home .eyebrow {
+  color: var(--accent-color);
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.portfolio-home .hero {
+  min-height: calc(100vh - 74px);
+}
+
+.portfolio-home .hero .hero-content h1 {
+  font-size: clamp(2.3rem, 5vw, 4.5rem);
+  font-weight: 800;
+}
+
+.portfolio-home .hero .hero-content p {
+  font-size: 1.08rem;
+}
+
+.portfolio-home .hero .hero-actions .btn,
+.portfolio-home .contact-panel .btn {
+  border-radius: 6px;
+  font-weight: 700;
+  padding: 13px 22px;
+}
+
+.portfolio-home .hero .hero-actions .btn.btn-primary,
+.portfolio-home .contact-panel .btn.btn-primary {
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  color: #ffffff;
+}
+
+.portfolio-home .hero .hero-actions .btn.btn-primary:hover,
+.portfolio-home .contact-panel .btn.btn-primary:hover {
+  background: #c084fc;
+  border-color: #c084fc;
+  transform: translateY(-2px);
+}
+
+.portfolio-home .hero .hero-actions .btn.btn-outline {
+  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 15%);
+  color: var(--accent-color);
+}
+
+.portfolio-home .hero .hero-actions .btn.btn-outline:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: #f3e8ff;
+}
+
+.portfolio-home .portfolio-panel {
+  background: color-mix(in srgb, var(--surface-color), transparent 8%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 78%);
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.portfolio-home .portfolio-panel h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.portfolio-home .portfolio-info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-home .portfolio-info-list li {
+  align-items: flex-start;
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.portfolio-home .portfolio-info-list li+li {
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.portfolio-home .portfolio-info-list i {
+  color: var(--accent-color);
+  font-size: 1.15rem;
+}
+
+.portfolio-home .skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.portfolio-home .skill-tags span {
+  background: color-mix(in srgb, var(--accent-color), transparent 86%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 58%);
+  border-radius: 999px;
+  color: #f3e8ff;
+  font-weight: 600;
+  padding: 9px 14px;
+}
+
+.portfolio-home .tech-tags span {
+  background: color-mix(in srgb, #f0abfc, transparent 84%);
+  border-color: color-mix(in srgb, #f0abfc, transparent 55%);
+}
+
+.portfolio-home .portfolio-card {
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+.portfolio-home .portfolio-card .portfolio-info h4 {
+  font-size: 1.35rem;
+}
+
+.portfolio-home .project-link {
+  align-items: center;
+  display: inline-flex;
+  font-weight: 700;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.portfolio-home .project-link:hover i {
+  transform: translate(2px, -2px);
+}
+
+.portfolio-home .project-link i {
+  transition: 0.3s;
+}
+
+.portfolio-home .contact-panel {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.portfolio-home a[href^="mailto:"] {
+  font-weight: 700;
+}
+
+.portfolio-home .footer a:hover {
+  color: #c084fc;
+}
+
+@media (max-width: 768px) {
+  .portfolio-home .contact-panel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .portfolio-home .portfolio-panel {
+    padding: 24px;
+  }
+}

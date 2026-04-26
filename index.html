@@ -1,188 +1,465 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>leol.dev - Portfólio Profissional</title>
+    <meta
+      name="description"
+      content="Portfólio profissional desenvolvido a partir do template FolioOne da BootstrapMade."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, html, css, bootstrap, desenvolvimento web"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - FolioOne Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Poppins:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: FolioOne
   * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
   * Updated: Aug 23 2025 with Bootstrap v5.3.7
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body class="index-page">
+  <body class="index-page portfolio-home">
+    <header
+      id="header"
+      class="header d-flex align-items-center light-background sticky-top"
+    >
+      <div
+        class="container position-relative d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <span class="sitename">Leol.dev</span>
+        </a>
 
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Início</a></li>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="relatorio-css.html">Relatório CSS</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
 
-      <!-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="assets/img/logo.webp" alt="">
-      <h1 class="sitename">FolioOne</h1> 
-    </a> -->
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <div class="header-social-links">
+          <a href="https://leol.dev/" aria-label="Site pessoal"
+            ><i class="bi bi-globe2"></i
+          ></a>
+          <a href="https://github.com/leolace" aria-label="GitHub"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/leonardo-gonsalez/" aria-label="LinkedIn"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
       </div>
+    </header>
 
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 align-items-center">
-          <div class="col-lg-6 order-2 order-lg-1">
-            <div class="hero-content">
-              <h1 data-aos="fade-up" data-aos-delay="200">Hello, I'm <span class="highlight">Brandon Johnson</span></h1>
-              <h2 data-aos="fade-up" data-aos-delay="300">Creative <span class="typed" data-typed-items="UI/UX Designer, Web Developer, Digital Artist, Brand Strategist"></span></h2>
-              <p data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
-                <a href="portfolio.html" class="btn btn-primary">View My Work</a>
-                <a href="contact.html" class="btn btn-outline">Get In Touch</a>
-              </div>
-              <div class="social-links" data-aos="fade-up" data-aos-delay="600">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-github"></i></a>
-                <a href="#"><i class="bi bi-dribbble"></i></a>
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 align-items-center">
+            <div class="col-lg-6 order-2 order-lg-1">
+              <div class="hero-content">
+                <p
+                  class="portfolio-kicker"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
+                  Portfólio profissional
+                </p>
+                <h1 data-aos="fade-up" data-aos-delay="200">
+                  Olá, eu sou <span class="highlight">leol.dev</span>
+                </h1>
+                <h2 data-aos="fade-up" data-aos-delay="300">
+                  Estudante e desenvolvedor focado em
+                  <span
+                    class="typed"
+                    data-typed-items="HTML e CSS, Bootstrap, JavaScript, Soluções Web"
+                  ></span>
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="400">
+                  Tenho interesse em desenvolvimento web, interfaces acessíveis
+                  e projetos que transformam ideias em produtos digitais simples
+                  de usar. Este portfólio foi adaptado do template FolioOne com
+                  personalizações de cores, tipografia, botões e conteúdo.
+                </p>
+                <div
+                  class="hero-actions"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  <a href="#projetos" class="btn btn-primary"
+                    ><i class="bi bi-kanban me-2"></i>Ver projetos</a
+                  >
+                  <a href="#contato" class="btn btn-outline"
+                    ><i class="bi bi-send me-2"></i>Entrar em contato</a
+                  >
+                </div>
+                <div
+                  class="social-links"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
+                  <a href="https://leol.dev/" aria-label="Site pessoal"
+                    ><i class="bi bi-globe2"></i
+                  ></a>
+                  <a href="https://github.com/leolace" aria-label="GitHub"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                  <a href="https://www.linkedin.com/in/leonardo-gonsalez/" aria-label="LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                  <a href="mailto:lgonsalez02@gmail.com" aria-label="Email"
+                    ><i class="bi bi-envelope"></i
+                  ></a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2">
-            <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
-              <div class="image-wrapper">
-                <img src="assets/img/profile/profile-square-11.webp" alt="Sarah Mitchell" class="img-fluid">
-                <div class="floating-elements">
-                  <div class="floating-card design" data-aos="fade-left" data-aos-delay="700">
-                    <i class="bi bi-palette"></i>
-                    <span>Design</span>
-                  </div>
-                  <div class="floating-card code" data-aos="fade-right" data-aos-delay="800">
-                    <i class="bi bi-code-slash"></i>
-                    <span>Code</span>
-                  </div>
-                  <div class="floating-card creativity" data-aos="fade-up" data-aos-delay="900">
-                    <i class="bi bi-lightbulb"></i>
-                    <span>Ideas</span>
+            <div class="col-lg-6 order-1 order-lg-2">
+              <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
+                <div class="image-wrapper">
+                  <img
+                    src="assets/img/cachorro.jpeg"
+                    alt="Foto de perfil do portfólio de leol.dev"
+                    class="img-fluid"
+                  />
+                  <div class="floating-elements">
+                    <div
+                      class="floating-card design"
+                      data-aos="fade-left"
+                      data-aos-delay="700"
+                    >
+                      <i class="bi bi-layout-text-window-reverse"></i>
+                      <span>UI</span>
+                    </div>
+                    <div
+                      class="floating-card code"
+                      data-aos="fade-right"
+                      data-aos-delay="800"
+                    >
+                      <i class="bi bi-code-slash"></i>
+                      <span>Code</span>
+                    </div>
+                    <div
+                      class="floating-card creativity"
+                      data-aos="fade-up"
+                      data-aos-delay="900"
+                    >
+                      <i class="bi bi-lightbulb"></i>
+                      <span>Ideias</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- /Hero Section -->
 
+      <!-- Sobre mim Section -->
+      <section id="sobre" class="about section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Sobre mim</h2>
+          <p>
+            Sou leol.dev, estudante da área de tecnologia com interesse em
+            desenvolvimento front-end, criação de páginas responsivas e
+            organização de interfaces com HTML, CSS e Bootstrap. Atualmente
+            trabalho no BTG Pactual como desenvolvedor web frontend.
+          </p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-7">
+              <article class="portfolio-panel h-100">
+                <span class="eyebrow">Área de atuação</span>
+                <h3>Desenvolvimento web e experiências digitais</h3>
+                <p>
+                  Meu objetivo profissional é construir páginas claras,
+                  responsivas e úteis, combinando estrutura semântica, estilos
+                  bem organizados e componentes do Bootstrap. Atualmente atuo
+                  no BTG Pactual como desenvolvedor web frontend, trabalhando
+                  com interfaces modernas e experiências digitais para usuários.
+                </p>
+                <p>
+                  Busco evoluir em projetos acadêmicos, extensão, pesquisa e
+                  experiências práticas que aproximem tecnologia, comunicação e
+                  solução de problemas reais.
+                </p>
+              </article>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="portfolio-panel h-100">
+                <h3>Informações principais</h3>
+                <ul class="portfolio-info-list">
+                  <li>
+                    <i class="bi bi-person"></i><span>Nome: leol.dev</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-laptop"></i
+                    ><span>Interesse: desenvolvimento web</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-briefcase"></i
+                    ><span>Atual: desenvolvedor web frontend no BTG Pactual</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-geo-alt"></i
+                    ><span
+                      >Disponível para projetos acadêmicos e profissionais</span
+                    >
+                  </li>
+                  <li>
+                    <i class="bi bi-envelope"></i
+                    ><span>lgonsalez02@gmail.com</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Sobre mim Section -->
+
+      <!-- Habilidades Section -->
+      <section id="habilidades" class="skills section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Habilidades</h2>
+          <p>
+            Combino habilidades técnicas com competências pessoais importantes
+            para trabalho em equipe, organização e entrega de projetos.
+          </p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="portfolio-panel h-100">
+                <h3><i class="bi bi-people me-2"></i>Soft skills</h3>
+                <div class="skill-tags">
+                  <span>Trabalho em equipe</span>
+                  <span>Comunicação</span>
+                  <span>Criatividade</span>
+                  <span>Organização</span>
+                  <span>Liderança</span>
+                  <span>Aprendizado contínuo</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="portfolio-panel h-100">
+                <h3><i class="bi bi-tools me-2"></i>Tecnologias</h3>
+                <div class="skill-tags tech-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                  <span>Python</span>
+                  <span>Git</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Habilidades Section -->
+
+      <!-- Projetos Section -->
+      <section id="projetos" class="portfolio section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Projetos</h2>
+          <p>
+            Projetos acadêmicos e práticos usados para desenvolver lógica,
+            interface, organização de código e documentação.
+          </p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <article class="portfolio-card h-100">
+                <div class="portfolio-info">
+                  <h4>Magnolui</h4>
+                  <p>
+                    Biblioteca de componentes React criada para acelerar a
+                    construção de interfaces reutilizáveis, consistentes e
+                    fáceis de integrar em aplicações web.
+                  </p>
+                  <div class="portfolio-tags">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>JavaScript</span>
+                    <span>Componentes UI</span>
+                  </div>
+                  <a href="https://github.com/leolace/magnolui" class="project-link"
+                    >Ver repositório <i class="bi bi-arrow-up-right"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6">
+              <article class="portfolio-card h-100">
+                <div class="portfolio-img">
+                </div>
+                <div class="portfolio-info">
+                  <h4>Text Editor</h4>
+                  <p>
+                    Editor de texto desenvolvido em JavaScript puro, com foco em
+                    manipulação do DOM, interação direta no navegador e prática
+                    de funcionalidades essenciais de edição.
+                  </p>
+                  <div class="portfolio-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>DOM</span>
+                  </div>
+                  <a href="https://github.com/leolace/text-editor" class="project-link"
+                    >Ver repositório <i class="bi bi-arrow-up-right"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Projetos Section -->
+
+      <!-- Contato Section -->
+      <section id="contato" class="contact section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contato</h2>
+          <p>
+            Estou disponível para conversar sobre projetos, oportunidades de
+            aprendizado e colaboração profissional.
+          </p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-panel contact-panel">
+            <div>
+              <h3>Vamos conversar?</h3>
+              <p>
+                Email:
+                <a href="mailto:lgonsalez02@gmail.com"
+                  >lgonsalez02@gmail.com</a
+                >
+              </p>
+              <p>
+                Redes profissionais:
+                <a href="https://leol.dev/">Site pessoal</a>,
+                <a href="https://www.linkedin.com/in/leonardo-gonsalez/">LinkedIn</a> e
+                <a href="https://github.com/leolace">GitHub</a>
+              </p>
+            </div>
+            <a href="mailto:lgonsalez02@gmail.com" class="btn btn-primary"
+              ><i class="bi bi-envelope me-2"></i>Enviar email</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- /Contato Section -->
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">leol.dev</strong>
+            <span>Todos os direitos reservados<br /></span>
+          </p>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://leol.dev/" aria-label="Site pessoal"
+            ><i class="bi bi-globe2"></i
+          ></a>
+          <a href="https://github.com/leolace" aria-label="GitHub"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/leonardo-gonsalez/" aria-label="LinkedIn"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="mailto:lgonsalez02@gmail.com" aria-label="Email"
+            ><i class="bi bi-envelope"></i
+          ></a>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> |
+          Adaptado para atividade de HTML, CSS e Bootstrap
+        </div>
       </div>
+    </footer>
 
-    </section><!-- /Hero Section -->
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  </main>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <footer id="footer" class="footer">
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">FolioOne</strong> <span>All Rights Reserved<br></span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
